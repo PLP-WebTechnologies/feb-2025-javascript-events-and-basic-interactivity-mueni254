@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Mini Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Welcome to the Interactive Mini Project</h1>
+
+  <!-- Interactive Button -->
+  <button id="colorButton">Click Me!</button>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1" />
+    <img src="https://images.pexels.com/photos/850359/pexels-photo-850359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2" />
+    <img src="https://images.pexels.com/photos/42257/flowerful-flowery-flowerly-42257.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Image 3" />
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+  </div>
+  <div id="Tab1" class="tabcontent">
+    <p>This is Tab 1 content.</p>
+  </div>
+  <div id="Tab2" class="tabcontent">
+    <p>This is Tab 2 content.</p>
+  </div>
+
+  <!-- Form -->
+  <form id="signupForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required />
+    <span id="emailError" class="error"></span>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required />
+    <span id="passwordError" class="error"></span>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
